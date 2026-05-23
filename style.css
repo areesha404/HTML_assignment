@@ -1,0 +1,352 @@
+body {
+  margin: 0;
+  font-family: Arial;
+  background: #f5f5f5;
+}
+
+/* NAVBAR SECTION */
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 25px;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(10px);
+  color: white;
+  position: sticky;
+  top: 0;
+}
+.navbar div {
+  display: flex;
+  align-items: center;
+}
+
+.navbar a {
+  color: white;
+  margin-left: 15px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  color: #00eeff;
+  transform: scale(1.05);
+}
+
+
+/* Header */
+header {
+  background: url("https://www.shutterstock.com/image-photo/incredible-kirkjufell-cliff-tranquil-waterfall-260nw-2698025003.jpg")
+    center/cover;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+.slider {
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+  color: white;
+  text-align: center;
+}
+
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  opacity: 0;
+  animation: fade 12s infinite;
+    
+}
+
+.s1 {
+  background: url("https://t4.ftcdn.net/jpg/01/62/69/25/360_F_162692511_SidIKVCDnt5UKHPNqpCb2MSKvfBlx1lG.jpg")
+      center/cover;
+  animation-delay: 0s;
+}
+.s2 {
+  background: url("https://media.istockphoto.com/id/1267676223/photo/kikuchi-valley-waterfall-and-light-lay-in-the-forest-kikuchi-kumamoto-japan.jpg?s=612x612&w=0&k=20&c=wF0jLhudYNP_NPiewtkS4kqKN4gMkRw0RC6fz0PFVos=")
+    center/cover;
+
+  animation-delay: 4s;
+}
+.s3 {
+  background: url("https://hips.hearstapps.com/hmg-prod/images/cappadocia-turkey-royalty-free-image-1719603851.jpg?crop=0.666xw:1xh;0.168xw,0xh&resize=1120:*")
+    center/cover;
+  animation-delay: 8s;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+    transform: scale(1.1);
+  }
+  10% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+/* Packages */
+.section-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+}
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 3rem;
+  position: relative;
+  color: #114b3e;
+}
+.section-title::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 3px;
+  background-color: #00a86b;
+  margin: 10px auto 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+.packages {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  padding-bottom: 60px;
+}
+
+.card {
+  width: 300px;
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.card h2 {
+  color: #1e3a5f;
+}
+
+.days {
+  color: #666;
+}
+.places {
+  text-align: left;
+  padding-left: 40px;
+  color: #444;
+}
+
+.includes {
+  color: #666;
+  font-size: 15px;
+}
+.card h3 {
+  color: #1e3a5f;
+}
+
+.price {
+  font-size: 28px;
+  color: #ff914d;
+  font-weight: bold;
+}
+
+.card-btn {
+  background: #00b4d8;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  margin: 20px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.card-btn:hover {
+  background: #0077b6;
+}
+
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+  margin: 30px auto;
+}
+
+form {
+  background: white;
+  padding: 50px;
+  width: 350px;
+  box-shadow: 0 0 10px gray;
+  border-radius: 10px;
+}
+
+form input,
+form select,
+form textarea {
+  width: 100%;
+  margin: 8px 0;
+  padding: 10px;
+}
+
+
+.log-container {
+  display: flex;
+  justify-content: center;
+  gap: 70px;
+  padding: 40px;
+  flex-wrap: wrap;
+}
+
+.box {
+  background: white;
+  padding: 50px;
+  width: 250px;
+  box-shadow: 0 0 10px gray;
+  border-radius: 10px;
+}
+
+.box input {
+  width: 100%;
+  margin: 8px 0;
+  padding: 10px;
+}
+
+.box button {
+  width: 100%;
+  padding: 10px;
+  background: orange;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+.box button:hover {
+  background: darkorange;
+} 
+h1{
+  text-align: center;
+  margin-top: 30px;
+  color: #114b3e;
+}
+.payment-box h3 {
+  color: #1e3a5f;
+  margin-bottom: 20px;
+  font-size: 23px;
+}
+.payment-box {
+  background: white;
+  width: 400px;
+  margin: 30px auto;
+  padding: 50px;
+  box-shadow: 0 0 10px gray;
+  border-radius: 10px;
+}
+.payment-option{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+    font-size: 18px;
+}
+
+.payment-box input {
+  width: 100%;
+  margin: 8px 0;
+  padding: 10px;
+}
+
+.pay-btn, .book-btn {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 10px;
+  background: green;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.pay-btn:hover, .book-btn:hover {
+  background: darkgreen;
+}
+footer {
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+.contact-section {
+  background: #222;
+  text-align: center;
+  padding: 50px 20px;
+  color: white;
+}
+
+.contact-section h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.contact-section p {
+  max-width: 600px;
+  margin: auto;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.contact-box {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.contact-item {
+  background: rgba(255, 255, 255, 0.15);
+  color: white;
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  width: 220px;
+  border-radius: 15px;
+  transition: 0.3s;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+.contact-item a {
+  text-decoration: none;
+  color: white; /* change according to your background */
+}
+
+.contact-item a:hover {
+  color: #ffd700;
+}
+.contact-item:hover {
+  transform: translateY(-8px);
+}
+
+.contact-item h3 {
+  margin-bottom: 10px;
+  color: #00ffcc;
+}

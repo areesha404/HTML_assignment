@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Booking Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <h2>Travel Pakistan</h2>
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="packages.html">Packages</a>
+    <a href="booking.html">Booking</a>
+    <a href="login.html">Login</a>
+    <a href="payment.html">Payment</a>
+    <a href="index.html#contact">Contact</a>
+  </div>
+</nav>
+
+<h1>Book Your Tour</h1>
+
+<div class="form-container">
+
+ <form action="payment.html" method="get">
+    <input type="text" placeholder="Full Name" required>
+
+    <input type="email" placeholder="Email" required>
+
+    <input type="tel" placeholder="Phone Number">
+
+    <select required>
+      <option>Select Tour</option>
+      <option>Murree</option>
+      <option>Neelum Valley</option>
+      <option>Fairy Meadows</option>
+            <option>Swat Valley</option>
+      <option>Skardu</option>
+      <option>Hunza Adventure</option>
+
+    </select>
+
+    <input type="date" required>
+
+    <textarea placeholder="Special Requests"></textarea>
+
+    <button type="submit" class="book-btn">Confirm Booking</button>
+  </form>
+
+</div>
+
+</body>
+</html>
